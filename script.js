@@ -150,7 +150,7 @@ function updatePageNumber() {
 }
 
 function checkEasterEgg() {
-    if (percentage <= -95.5) {  // Show Easter egg when reaching the 8th image (87.5% = 7/8 * 100%)
+    if (percentage <= -99.5) {  // Show Easter egg when reaching the 8th image (87.5% = 7/8 * 100%)
         showEasterEgg();
     } else {
         hideEasterEgg();
@@ -162,7 +162,7 @@ function showEasterEgg() {
     if (!easterEgg) {
         easterEgg = document.createElement("div");
         easterEgg.id = "easter-egg";
-        easterEgg.innerHTML = "if u were wondering <br>how the pics relate<br> to the content,<br><br> they dont";
+        easterEgg.innerHTML = "trust me the <br>pics make sense";
         easterEgg.style.position = "fixed";
         easterEgg.style.right = "20px";
         easterEgg.style.bottom = "20px";

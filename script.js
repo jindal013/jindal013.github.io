@@ -3,7 +3,8 @@ const content = document.getElementById("content");
 const images = document.querySelectorAll(".image");
 const seeMoreButtons = document.querySelectorAll(".see-more");
 const darkModeToggle = document.getElementById("dark-mode-toggle");
-
+let startX;
+let isSwiping = false;
 
 let mouseDownAt = 0;
 let prevPercentage = 0;  // Start at -100% to align images to the right
@@ -74,7 +75,36 @@ window.onmouseup = () => {
     prevPercentage = percentage;
 }
 
+window.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    isSwiping = true;
+});
+
+window.addEventListener('touchmove', e => {
+    if (!isSwiping) return;
+
+    const mouseDelta = startX - e.touches[0].clientX;
+    const maxDelta = window.innerWidth / 2;
+
+    const newPercentage = prevPercentage + (mouseDelta / maxDelta) * -100;
+    percentage = Math.max(Math.min(newPercentage, 0), -100);
+
+    updateTrackPosition();
+    updatePageNumber();
+    checkEasterEgg();
+});
+
+window.addEventListener('touchend', () => {
+    isSwiping = false;
+    prevPercentage = percentage;
+});
+
+
 function updateTrackPosition() {
+    if (window.innerWidth <= 768) {
+        // On mobile, don't animate horizontal movement
+        return;
+    }
     track.animate({
         transform: `translate(${percentage}%, -50%)`
     }, { duration: 1200, fill: "forwards" });
@@ -109,7 +139,7 @@ function showEasterEgg() {
     if (!easterEgg) {
         easterEgg = document.createElement("div");
         easterEgg.id = "easter-egg";
-        easterEgg.textContent = "dogs are cool too";
+        easterEgg.textContent = "heres a cookie 🍪";
         easterEgg.style.position = "fixed";
         easterEgg.style.right = "20px";
         easterEgg.style.bottom = "20px";
@@ -188,6 +218,19 @@ function enlargeImage(clickedImage) {
         //closeButton.style.transition = "all 0.5s ease";
         //closeButton.style.transform = "translate(5rem, -3.5rem)";
     }, 1000);
+
+    // Add touch event listeners for mobile
+    let startY;
+    enlargedView.addEventListener('touchstart', e => {
+        startY = e.touches[0].clientY;
+    });
+
+    enlargedView.addEventListener('touchmove', e => {
+        const currentY = e.touches[0].clientY;
+        if (startY - currentY > 50) {
+            closeEnlargedView();
+        }
+    });
 }
 
 function closeEnlargedView() {

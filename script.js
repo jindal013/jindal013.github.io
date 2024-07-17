@@ -16,7 +16,7 @@ let transitionInProgress = false;  // Variable to track transition state
 const imageData = [
     { 
         title: "firewatch",
-        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
+        description: `<br>a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
                        that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
                        aggregated training data via custom parsers. 
                        raised <span class="tech"> $10k </span> in pre-seed funding.
@@ -24,14 +24,12 @@ const imageData = [
     },
     { 
         title: "crux platforms",
-        description: `<span>Web Application</span><br>
-                      Built a responsive web app using:
-                      <ul>
-                        <li><span class="tech">React</span> for frontend</li>
-                        <li><span class="tech">Node.js</span> for backend</li>
-                        <li><span class="tech">MongoDB</span> for database</li>
-                      </ul>
-                      <a href="https://project2.example.com" target="_blank">Visit the site</a>`
+        description: `<br>an <span class="crux">ed-tech</span> platform that streamlines practice resouces for international competitions. 
+                        currently deployed to <span class="crux">450+ users</span> in 2 schools and in <span class="crux">licensing</span> agreements
+                        with hosa canada.
+        
+        
+                      <br><br><a href="https://github.com/Crux-Platforms" target="_blank">view on github</a>`
     },
     { 
         title: "nokia",
@@ -39,31 +37,27 @@ const imageData = [
                       <br><br>currently working in <span class="nokia">NI Optics</span>`
     },
     { 
+        title: "hc face recognizer",
+        description: `<br>at the core of everything i do, as i got my exposure in tech through contest math. i value problem-solving at its core. some relevant math stats:
+                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+    },
+    { 
+        title: "live",
+        description: `<br>working with <span class="live">professor po-shen loh</span> from carnegie mellon university to reinvent online <span class="live">math education</span> for students worldwide. i teach alongside <a href="https://live.poshenloh.com/stars"  target="_blank">very cool people</a> and professional actors.
+                      <br><br><a href="https://live.poshenloh.com" target="_blank">view the website</a>`
+    },
+    { 
         title: "math",
-        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
-                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
-                       aggregated training data via custom parsers. 
-                       raised <span class="tech"> $10k </span> in pre-seed funding.
-                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+        description: `<br><span class="math">problem-solving</span> is at the core of everything i do, and my exposure in tech was through <span class="math">contest math</span>. some relevant math stats:
+                        <ul>
+                        <li>2x <span class="math">aime qualifier</span></li>
+                        <li><span class="math">honor roll</span> for euclid, hypatia, csmc</li>
+                        <li>9th nationally <a href="https://cms.math.ca/competitions/clmc/clmc2023/awards/" target="_blank">clmc</a></li>
+                        <li><span class="math">emacs</span> '24 @ uwaterloo </li>
+                      </ul>`
     },
     { 
-        title: "5",
-        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
-                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
-                       aggregated training data via custom parsers. 
-                       raised <span class="tech"> $10k </span> in pre-seed funding.
-                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
-    },
-    { 
-        title: "7",
-        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
-                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
-                       aggregated training data via custom parsers. 
-                       raised <span class="tech"> $10k </span> in pre-seed funding.
-                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
-    },
-    { 
-        title: "7",
+        title: "competitve programming",
         description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
                        that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
                        aggregated training data via custom parsers. 
@@ -164,7 +158,7 @@ function updatePageNumber() {
 }
 
 function checkEasterEgg() {
-    if (percentage <= -87.5) {  // Show Easter egg when reaching the 8th image (87.5% = 7/8 * 100%)
+    if (percentage <= -95.5) {  // Show Easter egg when reaching the 8th image (87.5% = 7/8 * 100%)
         showEasterEgg();
     } else {
         hideEasterEgg();
@@ -176,7 +170,7 @@ function showEasterEgg() {
     if (!easterEgg) {
         easterEgg = document.createElement("div");
         easterEgg.id = "easter-egg";
-        easterEgg.textContent = "heres a cookie 🍪";
+        easterEgg.innerHTML = "if u were wondering <br>how the pics relate<br> to the content,<br><br> they dont";
         easterEgg.style.position = "fixed";
         easterEgg.style.right = "20px";
         easterEgg.style.bottom = "20px";
@@ -298,7 +292,7 @@ darkModeToggle.addEventListener("click", () => {
 
     setTimeout(() => {
         transitionInProgress = false;
-    }, 3000);  // Duration of the transition
+    }, 4000);  // Duration of the transition
 });
 
 

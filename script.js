@@ -16,10 +16,10 @@ let transitionInProgress = false;  // Variable to track transition state
 const imageData = [
     { 
         title: "firewatch",
-        description: `<br>a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
-                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
+        description: `<br>a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>. 
+                        implemented kNN and logistical regression with 0.6 MSE loss on 
                        aggregated training data via custom parsers. 
-                       raised <span class="tech"> $10k </span> in pre-seed funding.
+                       raised <span class="tech"> $10k </span> pre-seed.
                       <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
     },
     { 
@@ -33,17 +33,17 @@ const imageData = [
     },
     { 
         title: "nokia",
-        description: `<br>utilizing<span class="nokia"> RAG </span>and<span class="nokia"> in-house LLMs </span>for faster RCA to traceback failures in machine logs. developing dashboards in <span class="nokia">splunk</span> to correlate <span class="nokia">~40k failures/day</span> for <span class="nokia">10k+ users</span> internationally.
-                      <br><br>currently working in <span class="nokia">NI Optics</span>`
+        description: `<br>utilizing<span class="nokia"> RAG </span>and<span class="nokia"> in-house LLMs </span>for faster RCA to traceback failures in machine logs. developing dashboards in <span class="nokia">splunk</span> to correlate ~40k failures/day for <span class="nokia">10k+ users</span> internationally.
+                      <br><br>currently working in <span class="nokia">NI Optics</span> (ottawa)`
     },
     { 
         title: "hc face recognizer",
-        description: `<br>at the core of everything i do, as i got my exposure in tech through contest math. i value problem-solving at its core. some relevant math stats:
-                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+        description: `<br><span class="hcfr">open-source</span> program that utilizes the <span class="hcfr">haar cascades</span> model to recognize familiar faces. the user is able to provide <span class="hcfr">custom training data</span> & labels to build their own recognizer.
+                      <br><br><a href="https://github.com/jindalchinmay/HC_FaceRecognition" target="_blank">view on github</a>`
     },
     { 
         title: "live",
-        description: `<br>working with <span class="live">professor po-shen loh</span> from carnegie mellon university to reinvent online <span class="live">math education</span> for students worldwide. i teach alongside <a href="https://live.poshenloh.com/stars"  target="_blank">very cool people</a> and professional actors.
+        description: `<br>working with <span class="live">professor po-shen loh</span> from carnegie mellon university to reinvent online <span class="live">math education</span> for students. i teach alongside <a href="https://live.poshenloh.com/stars" target="_blank">very cool people</a> and professional actors.
                       <br><br><a href="https://live.poshenloh.com" target="_blank">view the website</a>`
     },
     { 
@@ -58,22 +58,14 @@ const imageData = [
     },
     { 
         title: "competitve programming",
-        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
-                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
-                       aggregated training data via custom parsers. 
-                       raised <span class="tech"> $10k </span> in pre-seed funding.
-                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+        description: `<br>solving <span class="tech">computational problems</span> using algorithims and data structures. placed on the ccc senior '24 honour roll.
+                      
+                       <br><br><a href="https://www.cemc.uwaterloo.ca/contests/past_contests/2024/2024CCCResults.pdf" target="_blank">view</a>`
     },
     { 
         title: "guitar",
-        description: `music is a place for me to 
-                      Built a responsive web app using:
-                      <ul>
-                        <li><span class="tech">React</span> for frontend</li>
-                        <li><span class="tech">Node.js</span> for backend</li>
-                        <li><span class="tech">MongoDB</span> for database</li>
-                      </ul>
-                      <a href="https://project2.example.com" target="_blank">Visit the site</a>`
+        description: `<br>the creative corner. currently working with <span class="crux">abstract music records</span> to help produce riffs and do some shows. check out some songs below.
+                      <br><br><a href="https://open.spotify.com/album/5BKtttCpaLi2yt0MqofGLc?si=JD3MM-a1Ql6kM31Z0oXsug" target="_blank">listen to the album</a>`
     }
 ];
 

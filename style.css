@@ -254,6 +254,11 @@ body.light-mode #about-me span {
 }
 
 
+#enlarged-view .text-container .hcfr {
+    color: #985aee;
+    font-weight: bold;
+}
+
 
 #enlarged-view .text-container ul {
     list-style-type: disc;

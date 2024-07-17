@@ -13,8 +13,30 @@ let isDarkMode = true;  // Start in dark mode
 let transitionInProgress = false;  // Variable to track transition state
 
 const imageData = [
-    { title: "Project 1", description: "Description for Project 1" },
-    { title: "Project 2", description: "Description for Project 2" },
+    { 
+        title: "FireWatch",
+        description: `<br>wildfires <a href="https://natural-resources.canada.ca/simply-science/canadas-record-breaking-wildfires-2023-fiery-wake-call/25303" target="_blank">suck.</a> 
+                        <br><br>so my friends and i developed a <span class="tech"> geospatial ml pipeline </span> for<span class="tech"> wildfire prediction</span>
+                       that also accounts for human factors. we worked with legislative officials and indigenous groups while implementing:
+                      <ul>
+                        <li><span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss</li>
+                        <li>aggregated training data through custom parsers</li>
+                        <li>gaussian distributions and local morans for analysis </li>
+                      </ul>
+                      we even raised <span class="tech"> $10k </span> in pre-seed funding.
+                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+    },
+    { 
+        title: "Project 2",
+        description: `<span>Web Application</span><br>
+                      Built a responsive web app using:
+                      <ul>
+                        <li><span class="tech">React</span> for frontend</li>
+                        <li><span class="tech">Node.js</span> for backend</li>
+                        <li><span class="tech">MongoDB</span> for database</li>
+                      </ul>
+                      <a href="https://project2.example.com" target="_blank">Visit the site</a>`
+    },
     { title: "Project 3", description: "Description for Project 3" },
     { title: "Project 4", description: "Description for Project 4" },
     { title: "Project 5", description: "Description for Project 5" },
@@ -137,7 +159,7 @@ function enlargeImage(clickedImage) {
     titleElement.textContent = title;
 
     const descriptionElement = document.createElement("p");
-    descriptionElement.textContent = description;
+    descriptionElement.innerHTML = description;
 
     const closeButton = document.createElement("div");
     closeButton.className = "close-button";
@@ -159,13 +181,13 @@ function enlargeImage(clickedImage) {
 
     setTimeout(() => {
         enlargedImage.style.transform = "scale(1.2)";
-        enlargedImage.style.filter = "blur(7px)";
+        enlargedImage.style.filter = "blur(7px) brightness(30%)";
         textContainer.style.opacity = "1";
         
         // Animate the 'X' button
         //closeButton.style.transition = "all 0.5s ease";
         //closeButton.style.transform = "translate(5rem, -3.5rem)";
-    }, 1500);
+    }, 1000);
 }
 
 function closeEnlargedView() {

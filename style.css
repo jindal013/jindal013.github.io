@@ -141,8 +141,8 @@ h1 {
 }
 
 #about-me {
-    font-size: 1.2rem;
-    max-width: 30vw;
+    font-size: 1.1rem;
+    max-width: 28vw;
     /* transition: color 2s ease; */
 }
 
@@ -219,7 +219,7 @@ body.light-mode #about-me span {
 #enlarged-view .text-container h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: right;
 }
 
 #enlarged-view .text-container .highlight {
@@ -230,6 +230,11 @@ body.light-mode #about-me span {
 
 #enlarged-view .text-container .tech {
     color: #4CAF50;
+    font-weight: bold;
+}
+
+#enlarged-view .text-container .nokia {
+    color: #41a4e6;
     font-weight: bold;
 }
 

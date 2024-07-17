@@ -15,20 +15,15 @@ let transitionInProgress = false;  // Variable to track transition state
 
 const imageData = [
     { 
-        title: "FireWatch",
-        description: `<br>wildfires <a href="https://natural-resources.canada.ca/simply-science/canadas-record-breaking-wildfires-2023-fiery-wake-call/25303" target="_blank">suck.</a> 
-                        <br><br>so my friends and i developed a <span class="tech"> geospatial ml pipeline </span> for<span class="tech"> wildfire prediction</span>
-                       that also accounts for human factors. we worked with legislative officials and indigenous groups while implementing:
-                      <ul>
-                        <li><span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss</li>
-                        <li>aggregated training data through custom parsers</li>
-                        <li>gaussian distributions and local morans for analysis </li>
-                      </ul>
-                      we even raised <span class="tech"> $10k </span> in pre-seed funding.
+        title: "firewatch",
+        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
+                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
+                       aggregated training data via custom parsers. 
+                       raised <span class="tech"> $10k </span> in pre-seed funding.
                       <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
     },
     { 
-        title: "Project 2",
+        title: "crux platforms",
         description: `<span>Web Application</span><br>
                       Built a responsive web app using:
                       <ul>
@@ -38,12 +33,54 @@ const imageData = [
                       </ul>
                       <a href="https://project2.example.com" target="_blank">Visit the site</a>`
     },
-    { title: "Project 3", description: "Description for Project 3" },
-    { title: "Project 4", description: "Description for Project 4" },
-    { title: "Project 5", description: "Description for Project 5" },
-    { title: "Project 6", description: "Description for Project 6" },
-    { title: "Project 7", description: "Description for Project 7" },
-    { title: "Project 8", description: "theres something about music that drives me. " }
+    { 
+        title: "nokia",
+        description: `<br>utilizing<span class="nokia"> RAG </span>and<span class="nokia"> in-house LLMs </span>for faster RCA to traceback failures in machine logs. developing dashboards in <span class="nokia">splunk</span> to correlate <span class="nokia">~40k failures/day</span> for <span class="nokia">10k+ users</span> internationally.
+                      <br><br>currently working in <span class="nokia">NI Optics</span>`
+    },
+    { 
+        title: "math",
+        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
+                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
+                       aggregated training data via custom parsers. 
+                       raised <span class="tech"> $10k </span> in pre-seed funding.
+                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+    },
+    { 
+        title: "5",
+        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
+                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
+                       aggregated training data via custom parsers. 
+                       raised <span class="tech"> $10k </span> in pre-seed funding.
+                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+    },
+    { 
+        title: "7",
+        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
+                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
+                       aggregated training data via custom parsers. 
+                       raised <span class="tech"> $10k </span> in pre-seed funding.
+                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+    },
+    { 
+        title: "7",
+        description: `<br>developed a <span class="tech"> geospatial ml pipeline </span> for wildfire<span class="tech"> prediction</span>
+                       that accounts for human factors. implemented <span class="tech"> kNN </span>and<span class="tech"> logistical regression </span>with 0.6 MSE loss on 
+                       aggregated training data via custom parsers. 
+                       raised <span class="tech"> $10k </span> in pre-seed funding.
+                      <br><br><a href="https://github.com/FireWatch-ai/fireWatch" target="_blank">view on github</a>`
+    },
+    { 
+        title: "guitar",
+        description: `music is a place for me to 
+                      Built a responsive web app using:
+                      <ul>
+                        <li><span class="tech">React</span> for frontend</li>
+                        <li><span class="tech">Node.js</span> for backend</li>
+                        <li><span class="tech">MongoDB</span> for database</li>
+                      </ul>
+                      <a href="https://project2.example.com" target="_blank">Visit the site</a>`
+    }
 ];
 
 // Initialize the track position and image positions

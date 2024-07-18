@@ -284,7 +284,7 @@ darkModeToggle.addEventListener("click", () => {
 
     setTimeout(() => {
         transitionInProgress = false;
-    }, 4000);  // Duration of the transition
+    }, 1);  // Duration of the transition
 });
 
 
@@ -318,7 +318,7 @@ function updateDarkMode() {
 
     setTimeout(() => {
         makeIconsFadeIn();
-    }, 2000);  // Delay for icons fade-in to sync with background transition
+    }, 1000);  // Delay for icons fade-in to sync with background transition
 
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     darkModeToggle.textContent = isDarkMode ? "🔆" : "🌑";

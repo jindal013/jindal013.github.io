@@ -330,3 +330,13 @@ document.querySelector('.toggle-switch').addEventListener("click", () => {
     isDarkMode = !isDarkMode;
     updateDarkMode();
 });
+
+function preventTextSelection(e) {
+    e.preventDefault();
+    return false;
+}
+
+// Add these event listeners at the end of your script.js file
+document.addEventListener('selectstart', preventTextSelection);
+document.addEventListener('mousedown', preventTextSelection);
+document.addEventListener('touchstart', preventTextSelection, { passive: false });

@@ -284,7 +284,7 @@ darkModeToggle.addEventListener("click", () => {
 
     setTimeout(() => {
         transitionInProgress = false;
-    }, 1);  // Duration of the transition
+    }, 2000);  // Duration of the transition
 });
 
 

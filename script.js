@@ -162,7 +162,7 @@ function showEasterEgg() {
     if (!easterEgg) {
         easterEgg = document.createElement("div");
         easterEgg.id = "easter-egg";
-        easterEgg.innerHTML = "trust me the <br>pics make sense";
+        easterEgg.innerHTML = "🍪";
         easterEgg.style.position = "fixed";
         easterEgg.style.right = "20px";
         easterEgg.style.bottom = "20px";
